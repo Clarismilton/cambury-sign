@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+	<!-- Cambury Sign - Sistema de controle do Círculo do Conhecimento - Faculdade Cambury - by Clarismilton -->
+
+	<h:head>
+		<title>Cambury Sign</title>	
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="shortcut icon" href="/images/icone.ico" type="image/x-icon" />	
+	</h:head>
+
+	<h:body>
+
+		<h:form id="template">
+
+	    <p:growl id="growl" showDetail="true" sticky="false" life="5000" />  
+	    
+	    <p:menubar>
+	    	
+	    	<p:submenu label="Arquivo">
+	    		<p:menuitem value="Avaliador" url="cad_avaliador.jsf"/>
+	    		<p:menuitem value="Concurso" url="cad_concurso.jsf"/>
+	    		<p:menuitem value="Curso" url="cad_curso.jsf"/>
+	    		<p:menuitem value="Empresa" url="cad_empresa.jsf"/>
+	    		<p:menuitem value="Grupo" url="cad_grupo.jsf"/>
+	    		<p:menuitem value="Professor" url="cad_professor.jsf"/>
+	    		<p:menuitem value="Usuário" url="cad_usuario.jsf"/>
+	    	</p:submenu>
+	    	
+	    	<p:submenu label="Configurações">
+	    		<p:menuitem value="Sistema"/>
+	    		<p:menuitem value="Outras"/>
+	    	</p:submenu>
+	    	
+	    	<p:submenu label="Sobre">
+	    		<p:menuitem value="Desenvolvedores"/>
+	    		<p:menuitem value="Sistema"/>
+	    	</p:submenu>   	
+
+	    	<p:submenu label="Finaliza">
+	    		<p:menuitem value="Sair" icon="ui-icon-power"/>
+	    	</p:submenu>
+	    	
+	    	<p:menuitem value="Início" url="index.jsf"/>
+	    	<p:menuitem value="Encerrar Sessão" url="/logout"/>
+	    	
+	    	    	
+	    </p:menubar >
+	
+		<p:dock position="bottom">
+
+			<p:menuitem value="Cambury" url="http://cambury.br/" icon="/images/cambury.png" target="_blank"/>
+			<p:menuitem value="Início" url="index.jsf" icon="/images/home.png"/>
+			<p:menuitem value="Músicas" url="http://radio.tce.go.gov.br/" icon="/images/musicas.png" target="_blank"/>
+			<p:menuitem value="Vídeos" url="https://www.youtube.com/user/tvcambury" icon="/images/videos.png" target="_blank"/>
+			<p:menuitem value="Sgestões" url="http://cambury.br/institucional/ouvidoria/" icon="/images/sugestoes.png" target="_blank"/>
+
+		</p:dock>
+		
+	</h:form>
+	
+	<ui:insert></ui:insert>
+	
+	</h:body>
+	
+</html>
