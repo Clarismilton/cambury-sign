@@ -133,7 +133,8 @@ public class Jpa extends AbstractTransactionManagementConfiguration {
 		Map<String, Object> bean = new HashMap<String, Object>();
 		bean.put("hibernate.hbm2ddl.auto", Hbm2Ddl.UPDATE.getValue());
 		bean.put("hibernate.format_sql", true);
-		bean.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
+		//bean.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect"); //Banco Postgres
+		bean.put("hibernate.dialect", "org.hibernate.dialect.SQLServerDialect"); //Banco SQL Server
 		// Prevents the throwing of LazyInitializationException.
 		bean.put("hibernate.enable_lazy_load_no_trans", true);
 		return bean;

@@ -63,6 +63,13 @@
 	</dependencyManagement>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+		<dependency>
+		    <groupId>com.microsoft.sqlserver</groupId>
+		    <artifactId>mssql-jdbc</artifactId>
+		    <version>7.0.0.jre8</version>
+		</dependency>
+
 		<!-- SERVLET API - APPLICATION SERVER PROVIDES -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
